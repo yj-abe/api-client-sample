@@ -5,13 +5,9 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-]
+  // デコレータは実験的機能のため、experimentalをtrueに設定する。
+  "compilerOptions": {
+    "target": "ES5",
+    "experimentalDecorators": true
+  }
 }
